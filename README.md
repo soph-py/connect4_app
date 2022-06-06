@@ -10,13 +10,23 @@ The game has three player options: human, simple AI, and random AI - you can eve
 
 ## Usage
 
+Clone the repository
+
+``` https://github.com/sophiatierney/connect4_app.git ```
+
+Once the project repo is cloned, cd into the root directory
+
+``` cd connect4_app/ ```
+
 ### Python Usage
 
-Once the project directory is cloned, all you have to do to play the game is run the following command on the command line:
+To play the game, run the following command in the terminal:
 
 ``` python3 main.py ```
 
 ### Docker Usage
+
+Alternatively, you can run the docker image by running the command below in the terminal:
 
 ``` docker run -it connect4:v1 ```
 
