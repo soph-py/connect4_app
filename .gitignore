@@ -1,0 +1,11 @@
+.DS_Store
+*/.DS_Store
+**/.DS_Store
+*/.vscode
+*/config_files/1X1X1.txt
+*/config_files/1X2X2.txt
+*/config_files/3X3X3.txt
+*/config_files/20X17X2.txt
+*/NOTES.md
+*/requirements.txt
+*/Connect4Game/test/test_simple_ai.py
