@@ -4,7 +4,7 @@ from Connect4Game.src.game import Game
 # runtime command line arguments:
 # python3 main.py config_files/connect4.txt 25
 
-def main(game_config: str = 'Connect4_app/config_files/connect4.txt') -> None:
+def main(game_config: str = 'config_files/connect4.txt') -> None:
     """
     Run the program
     :return:

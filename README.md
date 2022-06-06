@@ -14,9 +14,9 @@ Clone the repository
 
 ``` https://github.com/sophiatierney/connect4_app.git ```
 
-Once the project repo is cloned, cd into the root directory
+Once the project repo is cloned, cd into the root directory:
 
-``` cd connect4_app/ ```
+``` cd connect4_app/Connect4/ ```
 
 ### Python Usage
 
