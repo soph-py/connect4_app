@@ -48,7 +48,8 @@ Alternatively, you can run the docker image by running the command below in the 
 
     ``` HumanPlayer 1 enter your name ```
 
-    * Any player name works as long as no two players have the same name, otherwise the program will throw an error. *
+	- *Any player name works as long as no two players have the same name, otherwise the 
+program will throw an error.*
 
 3. Choosing your game piece
 
