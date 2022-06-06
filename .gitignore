@@ -9,6 +9,6 @@
 */NOTES.md
 */requirements.txt
 */Connect4Game/test/test_simple_ai.py
-__pycache__/
-*/__pycache__/
-**/__pycache__/
+__pycache__
+*/__pycache__
+**/__pycache__
