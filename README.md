@@ -6,29 +6,37 @@ A command line implementation of the classic Connect4 game.
 
 This project is focused on object oriented programming, particularly class inheritance and abstract base classes.
 
-The game has three player options: human, simple AI, and random AI - you can even have both AI's play against each other.
+The game has three player options: human, basic AI, and random AI - you can even have both AI's play against each other.
 
 ## Usage
 
 Clone the repository
 
-``` https://github.com/sophiatierney/connect4_app.git ```
+```bash:
+https://github.com/sophiatierney/connect4_app.git
+```
 
 Once the project repo is cloned, cd into the root directory:
 
-``` cd connect4_app/Connect4/ ```
+```bash:
+cd connect4_app/Connect4/ 
+```
 
 ### Python Usage
 
 To play the game, run the following command in the terminal:
 
-``` python3 main.py ```
+```bash:
+python3 main.py 
+```
 
 ### Docker Usage
 
 Alternatively, you can run the docker image by running the command below in the terminal:
 
-``` docker run -it connect4:v1 ```
+```bash:
+docker run -it connect4:v1 
+```
 
 ## Game Setup
 
@@ -38,9 +46,9 @@ Alternatively, you can run the docker image by running the command below in the 
 
     ```Choose the type for Player 1.```
 
-    ```Enter Human or Random or Simple```
+    ```Enter Human or Random or Basic```
 
-    The program will accept any variation of the words *human*, *simple*, or *random*. For selecting the **human** player for example, you can enter ```human``` or ```Human``` (case insensitive), or simply entering the first letter of the player: ```h``` will suffice.
+    The program will accept any variation of the words *human*, *basic*, or *random*. For selecting the **human** player for example, you can enter ```human``` or ```Human``` (case insensitive), or simply entering the first letter of the player: ```h``` will suffice.
 
 2. Choosing your player name
 
@@ -48,8 +56,7 @@ Alternatively, you can run the docker image by running the command below in the 
 
     ``` HumanPlayer 1 enter your name ```
 
-	- *Any player name works as long as no two players have the same name, otherwise the 
-program will throw an error.*
+    - *Any player name works as long as no two players have the same name, otherwise the program will throw an error.*
 
 3. Choosing your game piece
 
@@ -63,4 +70,41 @@ program will throw an error.*
 
 4. Picking player type for player $2$
 
-    You may select any of the three player types: human, simple AI or random AI. Simple AI will try to make a move on the board anywhere it can block you: the opponent. Random AI will randomly select a spot on the board to place a piece. Despite their names, the random AI is not the smartest compared to simple AI. It's harder to beat simple AI.
+    You may select any of the three player types: human, basic AI or random AI. basic AI will try to make a move on the board anywhere it can block you: the opponent. Random AI will randomly select a spot on the board to place a piece. Despite their names, the random AI is not the smartest compared to basic AI. It's harder to beat basic AI.
+
+## Project File Structure
+
+```bash:
+.
+├── Connect4
+│   ├── Connect4Game
+│   │   ├── __init__.py
+│   │   ├── src
+│   │   │   ├── __init__.py
+│   │   │   ├── board.py
+│   │   │   ├── game.py
+│   │   │   ├── move.py
+│   │   │   └── players
+│   │   │       ├── __init__.py
+│   │   │       ├── basic_ai.py
+│   │   │       ├── human_player.py
+│   │   │       ├── player.py
+│   │   │       └── random_ai.py
+│   │   └── test
+│   │       ├── __init__.py
+│   │       ├── test_basic_ai.py
+│   │       ├── test_board.py
+│   │       ├── test_human_player.py
+│   │       └── test_random_ai.py
+│   ├── Dockerfile
+│   ├── config_files
+│   │   └── connect4.txt
+│   ├── env
+│   ├── main.py
+│   ├── pyproject.toml
+│   ├── setup.cfg
+│   └── setup.py
+├── LICENSE.md
+└── README.md
+7 directories, 23 files
+```

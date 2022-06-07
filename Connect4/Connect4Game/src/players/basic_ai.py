@@ -3,11 +3,11 @@ import copy
 from Connect4Game.src.players import player, random_ai
 from .. import move, board
 
-class SimpleAi(random_ai.RandomAi):
+class BasicAi(random_ai.RandomAi):
 
     @classmethod
     def get_valid_name(cls, players: List["player.Player"], case_matters: bool = False) -> str:
-        return f'SimpleAi {len(players) + 1}'
+        return f'BasicAi {len(players) + 1}'
 
     def get_move(self, the_board: board.Board, num_pieces_to_win: int) -> "move.Move":
         ## check for a winning position

@@ -1,6 +1,6 @@
 from typing import List, Optional
 from .board import Board
-from Connect4Game.src.players import human_player, player, random_ai, simple_ai
+from Connect4Game.src.players import human_player, player, random_ai, basic_ai
 
 
 class Game(object):
@@ -57,7 +57,7 @@ class Game(object):
     @property
     def is_tie_game(self) -> bool:
         """
-        Check if the game ended ina tie.
+        Check if the game ended in a tie.
         Can only be safely called after checking if someone won the game
         :return: if the game ended in a tie
         """
@@ -65,16 +65,16 @@ class Game(object):
 
     @staticmethod
     def get_valid_player_type_from_user(player_num: int) -> str:
-        legal_player_types = ('human', 'random', 'simple')
+        legal_player_types = ('human', 'random', 'basic')
         while True:
             print(f'Choose the type for Player {player_num + 1}')
-            player_type_input = input('Enter Human or Random or Simple: ')
+            player_type_input = input('Enter Human or Random or Basic: ')
             player_type = player_type_input.strip().lower()
             for legal_player_type in legal_player_types:
                 if legal_player_type.startswith(player_type) and player_type != '':
                     return legal_player_type
             else:
-                print(f'{player_type} is not one of Human or Random or Simple. Please try again.')
+                print(f'{player_type} is not one of Human or Random or Basic. Please try again.')
                 
 
     def setup_players(self) -> None:
@@ -90,7 +90,7 @@ class Game(object):
             elif player_type == 'random':
                 new_player = random_ai.RandomAi.create_for_game(self.players, self.board.blank_char)
             else:
-                new_player = simple_ai.SimpleAi.create_for_game(self.players, self.board.blank_char)
+                new_player = basic_ai.BasicAi.create_for_game(self.players, self.board.blank_char)
             self.players.append(new_player)
         # player 1 points to the opponent object
         self.players[0].opponent = self.players[1] # player 1 - point object to refer to each other

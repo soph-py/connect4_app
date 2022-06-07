@@ -8,5 +8,5 @@
 */config_files/20X17X2.txt
 */NOTES.md
 */requirements.txt
-*/Connect4Game/test/test_simple_ai.py
+*/Connect4Game/test/test_basic_ai.py
 **/__pycache__
