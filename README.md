@@ -13,7 +13,7 @@ The game has three player options: human, basic AI, and random AI - you can even
 Clone the repository
 
 ```bash:
-git clone https://github.com/sophiatierney/connect4_app.git
+git clone https://github.com/soph-py/connect4_app.git
 ```
 
 Once the project repo is cloned, cd into the root directory:
