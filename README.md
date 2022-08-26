@@ -42,7 +42,7 @@ docker run -it connect4:v1
 
 1. Picking your player type
 
-    You will then be prompted to select the player type for player $1$.
+    You will then be prompted to select the player type for player $`1`$.
 
     ```Choose the type for Player 1.```
 
@@ -52,7 +52,7 @@ docker run -it connect4:v1
 
 2. Choosing your player name
 
-    After selecting player type $1$, you must enter your player name.
+    After selecting player type $`1`$, you must enter your player name.
 
     ``` HumanPlayer 1 enter your name ```
 
