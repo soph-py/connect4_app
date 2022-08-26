@@ -1,14 +1,14 @@
 # Connect4 Python Command Line Game
 
-A command line implementation of the classic Connect4 game.
+A command line implementation of the classic Connect4 game written in pure Python.
 
 ## Overview
 
-This project is focused on object oriented programming, particularly class inheritance and abstract base classes.
+This project is focused on object oriented programming, particularly class inheritance and abstract base classes. It is built in pure Python, using only built-in modules from the Python Standard Library.
 
 The game has three player options: human, basic AI, and random AI - you can even have both AI's play against each other.
 
-## Usage
+## Usage - Unix/Linux Operating Systems
 
 Clone the repository
 
