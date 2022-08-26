@@ -19,7 +19,7 @@ git clone https://github.com/soph-py/connect4_app.git
 Once the project repo is cloned, cd into the root directory:
 
 ```bash:
-cd connect4_app/Connect4/ 
+cd ~/connect4_app/Connect4/ 
 ```
 
 ### Python Usage
