@@ -68,7 +68,7 @@ docker run -it connect4:v1
 
     For example, ```b```, ```0```, or ```^```.
 
-4. Picking player type for player $$2$$
+4. Picking player type for player $`2`$
 
     You may select any of the three player types: human, basic AI or random AI. basic AI will try to make a move on the board anywhere it can block you: the opponent. Random AI will randomly select a spot on the board to place a piece. Despite their names, the random AI is not the smartest compared to basic AI. It's harder to beat basic AI.
 
