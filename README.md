@@ -94,12 +94,11 @@ docker run -it connect4:v1
 │   │       ├── __init__.py
 │   │       ├── test_basic_ai.py
 │   │       ├── test_board.py
-│   │       ├── test_human_player.py
 │   │       └── test_random_ai.py
 │   ├── Dockerfile
 │   ├── config_files
-│   │   └── connect4.txt
-│   ├── env
+│   │   └── connect4_config.txt
+│   ├── .env
 │   ├── main.py
 │   ├── pyproject.toml
 │   ├── setup.cfg
